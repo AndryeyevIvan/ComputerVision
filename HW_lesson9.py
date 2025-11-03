@@ -46,6 +46,7 @@ cv2.putText(image, answers[3][0], (145, 420), cv2.FONT_HERSHEY_SIMPLEX, 0.346, (
 cv2.putText(image, answers[3][1], (400, 420), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
 
 
-cv2.imshow("white_image.png", image)
+cv2.imshow("image", image)
 cv2.waitKey(0)
+
 cv2.destroyAllWindow()
