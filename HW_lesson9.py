@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import os
 
-print("Натискайте 0, щоб перейти до наступного зображення")
+print("Натискайте 0, щоб перейти до наступного зображення. В кінці у консоль буде виведено таблицю")
 
 net = cv2.dnn.readNetFromCaffe("data/MobileNet/mobilenet_deploy.prototxt", "data/MobileNet/mobilenet.caffemodel")
 
@@ -36,12 +36,21 @@ for filename in os.listdir(folder):
         cv2.imshow("Image", image)
         cv2.waitKey(0)
         if not any(a[0] == label for a in answers):
-            answers.append([label, f"{int(conf)}%", 1])
+            answers.append([label, 1])
         else:
             for a in answers:
                 if a[0] == label:
                     a[2] += 1
                     break
 
+maxlen = max(len(x[0]) for x in answers)
+
+print("Назва:", (" " * (maxlen - 15)), "Кількість:")
+print("-" * (maxlen + 3))
+print()
+
 for i in answers:
-    print(i)
+    print(("." * (maxlen - len(i[0]))), *i)
+
+print()
+print("-" * (maxlen + 3))
