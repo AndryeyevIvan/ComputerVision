@@ -53,4 +53,8 @@ for i in answers:
     print(("." * (maxlen - len(i[0]))), *i)
 
 print()
+<<<<<<< HEAD
 print("-" * (maxlen + 3))
+=======
+print("-" * (maxlen + 3))
+>>>>>>> ef3e675e2eca03394a804d50d168cf6b8d6994e2
