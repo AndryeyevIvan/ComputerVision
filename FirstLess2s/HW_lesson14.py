@@ -35,12 +35,7 @@ CONF_THRESHOLD = 0.5
 def detect_people_on_image(image_bgr):
     (h, w) = image_bgr.shape[:2]
 
-    blob = cv2.dnn.blobFromImage(
-        image_bgr,
-        scalefactor=0.007843,
-        size=(300, 300),
-        mean=(127.5, 127.5, 127.5)
-    )
+    blob = cv2.dnn.blobFromImage(image_bgr, scalefactor=0.007843, size=(300, 300), mean=(127.5, 127.5, 127.5))
 
     net.setInput(blob)
     detections = net.forward()
@@ -90,25 +85,11 @@ for filename in files:
 
     for (x1, y1, x2, y2), conf in zip(boxes, confidences):
         cv2.rectangle(boxed, (x1, y1), (x2, y2), (0, 255, 0), 2)
-        cv2.putText(
-            boxed,
-            f"person {conf:.2f}",
-            (x1, max(20, y1 - 10)),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            0.6,
-            (0, 255, 0),
-            2
-        )
+        cv2.putText(boxed, f"person {conf:.2f}", (x1, max(20, y1 - 10)), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
 
     cv2.putText(
         boxed,
-        f"People count: {people_count}",
-        (10, 30),
-        cv2.FONT_HERSHEY_SIMPLEX,
-        1.0,
-        (0, 0, 255),
-        2
-    )
+        f"People count: {people_count}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 2)
 
     if people_count > 0:
         shutil.copy2(in_path, os.path.join(PEOPLE_DIR, filename))
@@ -125,3 +106,4 @@ print("З людьми:", count_people_images)
 print("Без людей:", count_no_people_images)
 print("Поріг confidence:", CONF_THRESHOLD)
 print("Результати в:", OUT_DIR)
+
