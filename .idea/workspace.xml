@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b8eb344-97c1-451f-a790-b83bf4d94fcb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6b8eb344-97c1-451f-a790-b83bf4d94fcb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +46,7 @@
     "Python.CW_lesson14.executor": "Run",
     "Python.CW_lesson15.executor": "Run",
     "Python.CW_lesson16.executor": "Run",
+    "Python.CW_lesson17.executor": "Run",
     "Python.HW_lesson11.executor": "Run",
     "Python.HW_lesson12.executor": "Run",
     "Python.HW_lesson14.executor": "Run",
