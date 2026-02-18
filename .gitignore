@@ -1,0 +1,6 @@
+﻿output/
+*.pt
+*.mp4
+.venv/
+.idea/
+__pycache__/

@@ -7,7 +7,6 @@ DATASET_PATH = "dataset"
 TRAIN_PATH = "dataset/train"
 VAL_PATH = "dataset/val"
 
-# ---------- Разделение на train/val ----------
 if not os.path.exists(TRAIN_PATH):
     for cls in os.listdir(DATASET_PATH):
         if cls in ["train", "val"]:
@@ -25,21 +24,14 @@ if not os.path.exists(TRAIN_PATH):
         os.makedirs(os.path.join(VAL_PATH, cls), exist_ok=True)
 
         for img in train_imgs:
-            shutil.copy(
-                os.path.join(DATASET_PATH, cls, img),
-                os.path.join(TRAIN_PATH, cls, img)
-            )
+            shutil.copy(os.path.join(DATASET_PATH, cls, img), os.path.join(TRAIN_PATH, cls, img))
 
         for img in val_imgs:
-            shutil.copy(
-                os.path.join(DATASET_PATH, cls, img),
-                os.path.join(VAL_PATH, cls, img)
-            )
+            shutil.copy(os.path.join(DATASET_PATH, cls, img), os.path.join(VAL_PATH, cls, img))
 
-print("Датасет подготовлен.")
+print("Датасет ініаціалізован")
 
-# ---------- Обучение ----------
-model = YOLO("yolov8n-cls.pt")  # классификационная версия
+model = YOLO("yolov8n-cls.pt")
 
 model.train(
     data="dataset",
@@ -48,8 +40,7 @@ model.train(
     batch=16
 )
 
-# ---------- Сохранение ----------
-model.export(format="onnx")  # если нужно для Unity
+model.export(format="onnx")
 model.save("plastic_metal_model.pt")
 
-print("Модель сохранена!")
+print("Модель збережена!")

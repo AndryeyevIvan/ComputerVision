@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b8eb344-97c1-451f-a790-b83bf4d94fcb" name="Changes" comment="" />
+    <list default="true" id="6b8eb344-97c1-451f-a790-b83bf4d94fcb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,11 +54,12 @@
     &quot;Python.HW_lesson14.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW_lesson15.executor&quot;: &quot;Run&quot;,
     &quot;Python.Server test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Zalikova.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/thund/PycharmProjects/ComputerVision/data&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/thund/PycharmProjects/ComputerVision/FirstLess2s/video&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,6 +71,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thund\PycharmProjects\ComputerVision\FirstLess2s\video" />
       <recent name="C:\Users\thund\PycharmProjects\ComputerVision\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -76,29 +80,7 @@
       <recent name="D:\PythonProjects\Lessons\ComputerVision\FirstLess2s\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.HW_lesson15">
-    <configuration name="CW_lesson15" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ComputerVision" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FirstLess2s" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FirstLess2s/CW_lesson15.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Zalikova">
     <configuration name="CW_lesson16" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ComputerVision" />
       <option name="ENV_FILES" value="" />
@@ -165,7 +147,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="Practichna" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="Zalikova" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+>>>>>>> db03f818ef89d0caa9d210d69e8ae0eeb94cf61a
       <module name="ComputerVision" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,7 +164,11 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="D:\PythonProjects\Lessons\ComputerVision\FirstLess2s\Practichna.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FirstLess2s/Zalikova.py" />
+>>>>>>> db03f818ef89d0caa9d210d69e8ae0eeb94cf61a
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,18 +179,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Zalikova" />
         <item itemvalue="Python.HW_lesson15" />
         <item itemvalue="Python.Practichna" />
         <item itemvalue="Python.CW_lesson16" />
         <item itemvalue="Python.HW_lesson14" />
-        <item itemvalue="Python.CW_lesson15" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-fc1d50d2d915-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.24978.54" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
       </set>
     </attachedChunks>
   </component>

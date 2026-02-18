@@ -18,12 +18,7 @@ while True:
 
     class_name = model.names[class_id]
 
-    cv2.putText(frame, f"{class_name} {confidence:.2f}",
-                (20, 40),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                1,
-                (0,255,0),
-                2)
+    cv2.putText(frame, f"{class_name} {confidence:.2f}",(20, 40), cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
 
     cv2.imshow("Test YOLO", frame)
 
